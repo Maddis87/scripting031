@@ -10,10 +10,10 @@ sudo apt-get update
 sudo apt-get upgrade
 
 header "apache2"
-
 installApache2
 
 header "curl"
+checkForCurl
 
 undoInstall "apache2"
 
