@@ -26,6 +26,6 @@ function checkForCurl {
 }
 
 function undoInstall {
-  sudo apt-autoremove $1 > /dev/null
+  sudo apt autoremove $1 > /dev/null
   echo "uninstall $1"
 }
