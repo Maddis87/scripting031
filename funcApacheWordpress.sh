@@ -33,5 +33,6 @@ function checkForCurl {
 
 function undoInstall {
   sudo apt-get autoremove -y $1 > /dev/null
+  echo ""
   echo "removing $1"
 }
