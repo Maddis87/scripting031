@@ -18,6 +18,9 @@ configFirewall
 header "MySQL"
 installMySQLServer
 
+header "PHP"
+installPHP
+
 #header "WordPress"
 
 #undoInstall "apache2"

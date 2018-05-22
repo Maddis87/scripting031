@@ -57,3 +57,9 @@ function installMySQLServer
    mysql_secure_installation
   fi
 }
+
+function installPHP
+{
+  sudo apt-get install php libapache2-mod-php php-mcrypt php-mysql
+
+}
