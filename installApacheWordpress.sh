@@ -12,4 +12,6 @@ header "Apache"
 
 installApache2
 
+undoInstall "apache2"
+
 
