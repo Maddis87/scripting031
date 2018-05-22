@@ -7,10 +7,13 @@ source funcApacheWordpress.sh
 header "Updating"
 
 sudo apt-get update
+sudo apt-get upgrade
 
 header "Apache"
 
 installApache2
+
+header "curl"
 
 undoInstall "apache2"
 

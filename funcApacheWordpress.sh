@@ -8,13 +8,24 @@ function header
 
 function installApache2
 {
-  if which Apache2 > /dev/null; then
-    echo "Apache2 is already installed, skipping..."
+  if which apache2 > /dev/null; then
+    echo "apache2 is already installed, skipping..."
   else 
-    sudo apt-get install apache2
+  echo "Installing apache2"
+    sudo apt-get install -y apache2 < /dev/null
+  fi
+}
+
+function checkForCurl {
+  if which curl > /dev/null; then
+    echo "curl is already installed, skipping..."
+  else 
+  echo "Installing curl"
+    sudo apt-get install -y curl < /dev/null
   fi
 }
 
 function undoInstall {
-  sudo apt-get remove $1
+  sudo apt-get remove $1 < /dev/null
+  echo "uninstalling $1"
 }
