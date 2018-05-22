@@ -37,3 +37,7 @@ function undoInstall {
   echo ""
   echo "removing $1"
 }
+
+function addServerName {
+  echo "ServerName $1" >> /etc/apache2/apache2.conf
+}
