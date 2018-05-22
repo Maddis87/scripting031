@@ -17,4 +17,3 @@ header "curl"
 
 undoInstall "apache2"
 
-
