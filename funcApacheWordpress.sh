@@ -39,9 +39,21 @@ function undoInstall {
 }
 
 function configFirewall {
+  echo ""
   echo "Configuring firewall with Apache Full and OpenSSh"
+  echo ""
   sudo ufw allow "Apache Full"
   sudo ufw allow "OpenSSH"
   sudo ufw enable
   sudo ufw status
+}
+function installMySQLServer
+{
+  if which mysql.server > /dev/null; then
+    echo "MySQL is already installed, skipping..."
+  else 
+  echo "Installing MySQL"
+   sudo apt-get install mysql-server
+   mysql_secure_installation
+  fi
 }

@@ -15,6 +15,9 @@ checkForCurl
 
 configFirewall
 
+header "MySQL"
+installMySQLServer
+
 #header "WordPress"
 
 #undoInstall "apache2"
