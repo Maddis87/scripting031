@@ -9,7 +9,7 @@ header "Updating"
 sudo apt-get update
 sudo apt-get upgrade
 
-header "Apache"
+header "apache2"
 
 installApache2
 
