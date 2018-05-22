@@ -6,6 +6,12 @@ function header
   echo ""
 }
 
+function upDate {
+  sudo apt-get update > /dev/null
+  echo "updated.................."
+  sudo apt-get upgrade > /dev/null
+  echo "upgraded................."
+}
 function installApache2
 {
   if which apache2 > /dev/null; then

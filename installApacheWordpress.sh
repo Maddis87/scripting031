@@ -5,9 +5,7 @@
 source funcApacheWordpress.sh
 
 header "Updating"
-
-sudo apt-get update
-sudo apt-get upgrade
+upDate
 
 header "apache2"
 installApache2
