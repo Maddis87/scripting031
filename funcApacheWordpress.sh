@@ -15,7 +15,7 @@ function upDate {
 function installApache2
 {
   if which apache2 > /dev/null; then
-    echo "apache2  already installed, skipping..."
+    echo "apache2 is already installed, skipping..."
   else 
   echo "Installing apache2"
     sudo apt-get install -y apache2 > /dev/null
