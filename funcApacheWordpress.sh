@@ -2,6 +2,7 @@
 
 function header
 {
+  echo ""
   echo "================== $1 =================="
   echo ""
 }

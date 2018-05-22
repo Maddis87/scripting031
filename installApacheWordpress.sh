@@ -13,5 +13,7 @@ installApache2
 header "curl"
 checkForCurl
 
-undoInstall "apache2"
+#header "WordPress"
+
+#undoInstall "apache2"
 
