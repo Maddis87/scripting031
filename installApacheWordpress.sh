@@ -9,7 +9,7 @@ upDate
 
 header "apache2"
 installApache2
-addServerName "194.47.207.121"
+addServerName
 
 header "curl"
 checkForCurl

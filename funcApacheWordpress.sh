@@ -39,5 +39,7 @@ function undoInstall {
 }
 
 function addServerName {
-  echo "ServerName $1" >> /etc/apache2/apache2.conf
+  echo "Which ip-number do you want to use?"
+  read ip
+  echo sudo $ip >> sudo /etc/apache2/apache2.conf
 }
