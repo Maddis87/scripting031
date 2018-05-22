@@ -38,8 +38,10 @@ function undoInstall {
   echo "removing $1"
 }
 
-function addServerName {
-  echo "Which ip-number do you want to use?"
-  read ip
-  echo sudo $ip >> sudo /etc/apache2/apache2.conf
+function configFirewall {
+  echo "Configuring firewall with Apache Full and OpenSSh"
+  sudo ufw allow "Apache Full"
+  sudo ufw allow "OpenSSH"
+  sudo ufw enable
+  sudo ufw status
 }

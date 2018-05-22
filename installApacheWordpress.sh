@@ -9,10 +9,11 @@ upDate
 
 header "apache2"
 installApache2
-addServerName
 
 header "curl"
 checkForCurl
+
+configFirewall
 
 #header "WordPress"
 
