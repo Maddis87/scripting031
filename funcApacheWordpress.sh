@@ -53,13 +53,18 @@ function installMySQLServer
     echo "MySQL is already installed, skipping..."
   else 
   echo "Installing MySQL"
-   sudo apt-get install mysql-server
+   sudo apt-get install -y mysql-server > /dev/null
    mysql_secure_installation
   fi
 }
 
 function installPHP
 {
-  sudo apt-get install php libapache2-mod-php php-mcrypt php-mysql
-
+sudo apt-get -y install php libapache2-mod-php php-mcrypt php-mysql > /dev/null
+echo "PHP installation is finished"
+echo ""
+echo "Move to dir sudo nano /etc/apache2/mods-enabled/dir.conf"
+echo "and reorder the server to look for .php file first."
+echo "when finished with reordering the index, restart the server"
+echo "with command sudo systemctl restart apache2"
 }
