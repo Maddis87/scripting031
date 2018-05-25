@@ -53,7 +53,7 @@ function installMySQLServer
     echo "MySQL is already installed, skipping..."
   else 
   echo "Installing MySQL"
-   sudo apt-get install -y mysql-server > /dev/null
+   sudo apt-get install -y mysql-server
    mysql_secure_installation
   fi
 }
